@@ -19,4 +19,4 @@ pip install pymongo
 
 Executar o script "criar_banco.py" e após isso o script "app.py". 
 
-Com a api rodando, basta utilizar os endpoints fornecidos em algum software como postman. 
+Com a api rodando, basta utilizar os endpoints fornecidos, em algum software como postman. 
