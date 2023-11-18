@@ -36,6 +36,12 @@ def carro_add():
         # puxa o body do request
         dados = request.get_json()
 
+        # verifica se o modelo existe
+        id_modelo = dados.get("id_modelo")
+        resposta_modelo, status_code = modelo_get_by_id(id_modelo)
+        if status_code == 404:
+            return jsonify({"erro": "Id modelo nao existe"}), 404
+
         resultado = colecao_carro.insert_one(dados)
 
         return jsonify({"mensagem": "Inserido com sucesso", "id_inserido": str(resultado.inserted_id)})
@@ -126,6 +132,12 @@ def modelo_add():
         # puxa o body do request
         dados = request.get_json()
 
+        # verifica se a marca existe
+        id_marca = dados.get("id_marca")
+        resposta_marca, status_code = marca_get_by_id(id_marca)
+        if status_code == 404:
+            return jsonify({"erro": "Id marca nao existe"}), 404
+
         resultado = colecao_modelo.insert_one(dados)
 
         return jsonify({"mensagem": "Inserido com sucesso", "id_inserido": str(resultado.inserted_id)})
@@ -149,7 +161,6 @@ def modelo_edit_by_id(modelo_id):
     except Exception as e:
         return jsonify({"erro": str(e)}), 500
 
-
 @app.route('/modelo/deleteById/<string:modelo_id>', methods=['DELETE'])
 def modelo_delete_by_id(modelo_id):
     try:
@@ -165,7 +176,6 @@ def modelo_delete_by_id(modelo_id):
     except Exception as e:
         return jsonify({"erro": str(e)}), 500
     
-
 @app.route('/modelo/getAll', methods=['GET'])
 def modelo_get_All():
     try:
@@ -196,7 +206,7 @@ def modelo_get_by_id(modelo_id):
                 "id_marca": modelo.get("id_marca"),
                 "nome": modelo.get("nome")
             }
-            return jsonify(modelo_json)
+            return jsonify(modelo_json), 200
         else:
             return jsonify({"mensagem": "modelo não encontrado"}), 404
 
@@ -232,7 +242,6 @@ def marca_edit_by_id(marca_id):
 
     except Exception as e:
         return jsonify({"erro": str(e)}), 500
-
 
 @app.route('/marca/deleteById/<string:marca_id>', methods=['DELETE'])
 def marca_delete_by_id(marca_id):
@@ -277,7 +286,7 @@ def marca_get_by_id(marca_id):
                 "id": marca.get("id"),
                 "nome": marca.get("nome")
             }
-            return jsonify(marca_json)
+            return jsonify(marca_json), 200
         else:
             return jsonify({"mensagem": "marca não encontrado"}), 404
 

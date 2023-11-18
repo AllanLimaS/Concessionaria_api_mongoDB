@@ -9,8 +9,8 @@ cliente = MongoClient('mongodb://localhost:27017/')
 banco_de_dados = cliente['Concessionaria']
 
 
-colecao_carro = banco_de_dados['carro']
-colecao_loja = banco_de_dados['loja']
-colecao_modelo = banco_de_dados['modelo']
+colecao_carro = banco_de_dados['Carro']
+colecao_marca = banco_de_dados['Marca']
+colecao_modelo = banco_de_dados['Modelo']
 
 print("Banco de dados e coleção criados com sucesso.")
