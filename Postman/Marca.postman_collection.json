@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"1\",\r\n    \"id_marca\": \"1\",\r\n    \"nome\": \"Fiesta\"\r\n}",
+					"raw": "{\r\n    \"id\": \"2\",\r\n    \"nome\": \"Fiesta\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/modelo/add",
+					"raw": "http://127.0.0.1:5000/marca/add",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -31,7 +31,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"modelo",
+						"marca",
 						"add"
 					]
 				}
@@ -53,7 +53,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/modelo/editById/2",
+					"raw": "http://127.0.0.1:5000/marca/editById/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -63,7 +63,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"modelo",
+						"marca",
 						"editById",
 						"2"
 					]
@@ -89,7 +89,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/modelo/getAll",
+					"raw": "http://127.0.0.1:5000/marca/getAll",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -99,7 +99,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"modelo",
+						"marca",
 						"getAll"
 					]
 				}
@@ -124,7 +124,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/modelo/getById/2",
+					"raw": "http://127.0.0.1:5000/marca/getById/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -134,9 +134,9 @@
 					],
 					"port": "5000",
 					"path": [
-						"modelo",
+						"marca",
 						"getById",
-						"2"
+						"1"
 					]
 				}
 			},
@@ -157,7 +157,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/modelo/deleteById/",
+					"raw": "http://127.0.0.1:5000/marca/deleteById/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -167,7 +167,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"modelo",
+						"marca",
 						"deleteById",
 						""
 					]

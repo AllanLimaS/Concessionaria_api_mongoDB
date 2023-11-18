@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"1\",\r\n    \"nome\": \"Fiesta\"\r\n}",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"id_marca\":\"1\",\r\n    \"nome\": \"nissan\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/marca/add",
+					"raw": "http://127.0.0.1:5000/modelo/add",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -31,7 +31,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"marca",
+						"modelo",
 						"add"
 					]
 				}
@@ -45,7 +45,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"fiat 2\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"xivrolé\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -53,7 +53,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/marca/editById/1",
+					"raw": "http://127.0.0.1:5000/modelo/editById/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -63,7 +63,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"marca",
+						"modelo",
 						"editById",
 						"1"
 					]
@@ -89,7 +89,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/marca/getAll",
+					"raw": "http://127.0.0.1:5000/modelo/getAll",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -99,7 +99,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"marca",
+						"modelo",
 						"getAll"
 					]
 				}
@@ -124,7 +124,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/marca/getById/1",
+					"raw": "http://127.0.0.1:5000/modelo/getById/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -134,7 +134,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"marca",
+						"modelo",
 						"getById",
 						"1"
 					]
@@ -157,7 +157,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/marca/deleteById/",
+					"raw": "http://127.0.0.1:5000/modelo/deleteById/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -167,7 +167,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"marca",
+						"modelo",
 						"deleteById",
 						""
 					]
