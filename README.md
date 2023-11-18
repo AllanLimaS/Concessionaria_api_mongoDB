@@ -6,7 +6,7 @@ Onde tem como objetivo implementar três CRUDs com persistência de dados em ban
 Foi fornecido o diagrama de classes a seguir para utilizar de referência. 
 
 <p align="center">
-    <img width="400" src="![image](https://github.com/AllanLimaS/Concessionaria_api_mongoDB/assets/49033925/ba88d69f-a44b-4ee3-a060-c61bc17e3537)">
+    <img src="https://github.com/AllanLimaS/Concessionaria_api_mongoDB/assets/49033925/ba88d69f-a44b-4ee3-a060-c61bc17e3537">
 </p>
 
 ## Como executar
