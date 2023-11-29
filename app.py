@@ -11,7 +11,6 @@ from pymongo import MongoClient
 
 ##---------------------CONFIGS---------------------##
 
-# sei lá que porra é essa, mas funciona
 app = Flask(__name__)
 
 # Conexão com o banco: esse é o valor padrão normalmente 
